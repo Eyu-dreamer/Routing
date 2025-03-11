@@ -1,0 +1,53 @@
+header {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Link Styles */
+
+header a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 15px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
